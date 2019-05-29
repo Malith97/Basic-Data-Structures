@@ -1,0 +1,33 @@
+ 
+class BubbleSort { 
+	void bubbleSort(int arr[]){ 
+		int n = arr.length;  //creating an array and define
+		for (int i = 0; i < n-1; i++) 
+			for (int j = 0; j < n-i-1; j++) 
+				if (arr[j] > arr[j+1]) //check status
+				{ 
+					
+					int temp = arr[j];  //create a temporary variable and store array index
+					arr[j] = arr[j+1]; 
+					arr[j+1] = temp; 
+				} 
+	} 
+  
+
+	void printArray(int arr[]){ 
+		int n = arr.length; 
+		for (int i=0; i<n; ++i) //print sorted array
+			System.out.print(arr[i] + " "); 
+		System.out.println(); 
+	} 
+
+
+
+	public static void main(String args[]){ 
+		BubbleSort ob = new BubbleSort(); 
+		int arr[] = {64, 85, 23, 1, 90, 65, 73}; 
+		ob.bubbleSort(arr); 
+		System.out.println("Sorted array"); 
+		ob.printArray(arr); 
+	} 
+} 
