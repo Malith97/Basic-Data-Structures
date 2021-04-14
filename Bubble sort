@@ -7,7 +7,7 @@ class BubbleSort {
 				if (arr[j] > arr[j+1]) //check status
 				{ 
 					
-					int temp = arr[j];  //create a temporary variable and store array indexs
+					int temp = arr[j];  //create a temporary variable and store array index
 					arr[j] = arr[j+1]; 
 					arr[j+1] = temp; 
 				} 
