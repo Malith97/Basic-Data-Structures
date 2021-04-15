@@ -1,4 +1,4 @@
-class SelectionSort{ 
+class SelectionSorts{ 
 	void sort(int arr[]){ 
 		int n = arr.length; 
 
